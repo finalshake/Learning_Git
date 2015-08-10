@@ -19,7 +19,7 @@ git diff test.txt
 之后回退到没有3333333333之前的一个版本。
 相关命令：
 
-git log -pretty=oneline
+git log --pretty=oneline
 #git log 的单行显示
 
 git reset --hard HEAD^
@@ -28,5 +28,11 @@ git reset --hard HEAD^^
 git reset --hard HEAD~100
 #将版本回退到前100个版本
 
+若想再恢复3333333333，则需知道其版本号，命令如下：
 
+git reflog
+#查看回退前的版本号
+
+git reset --hard <version>
+#恢复到<version>版本
 
