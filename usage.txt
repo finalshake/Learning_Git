@@ -61,3 +61,26 @@ git remote add origin https://github.com/finalshake/Learning_Git
 git push -u origin master
 #将本地仓库的master分支推送到Github，第一次push时加了参数-u，这样Git不但会把本地的master分支内容推送的远程
 #新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
+
+
+--------------------创建与合并分支----------------------------------
+git checkout <branch>
+#切换到<branch>分支
+
+git branch dev
+#创建名为dev的分支
+
+git checkout -b dev
+#创建并切换到dev分支，相当于上两个命令的组合
+
+git branch
+#查看所处的分支
+
+在其他分支上完成的工作，经过认可，可以合并到master分支上。方法是切换回master分支，执行：
+git merge dev
+#将dev分支上的内容合并到master分支上，此处是fast-forward合并模式，即直接把master指向dev的当前提交
+
+
+
+
+
