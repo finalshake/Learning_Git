@@ -81,6 +81,9 @@ git merge dev
 #将dev分支上的内容合并到master分支上，此处是fast-forward合并模式，即直接把master指向dev的当前提交
 
 
+git branch -d dev
+#删除名为dev的分支
+
 
 
 
