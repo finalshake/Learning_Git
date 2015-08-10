@@ -10,4 +10,5 @@ git commit -m "注释评论"
 git status
 #查看是否还有文件未提交
 
-
+git diff test.txt
+#查看文件的变化
