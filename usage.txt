@@ -59,4 +59,5 @@ git remote add origin https://github.com/finalshake/Learning_Git
 #把本地的仓库与Github上的仓库关联起来
 
 git push -u origin master
-#将本地仓库的master分支推送到Github，第一次push时加了参数-u，这样Git不但会把本地的master分支内容推送的远程#新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
+#将本地仓库的master分支推送到Github，第一次push时加了参数-u，这样Git不但会把本地的master分支内容推送的远程
+#新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
