@@ -94,6 +94,7 @@ git branch -d dev
 6.手动修改（master|MERGING）中的test.txt，提交即可
 
 
-
+git merge -no-ff -m "commit" dev
+#禁用fast-forward模式合并dev分支
 
 
