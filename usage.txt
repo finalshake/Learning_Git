@@ -1,2 +1,13 @@
 git log
 #查看版本历史。
+
+git add test.txt
+#添加文件test.txt到暂存区
+
+git commit -m "注释评论"
+#把文件提交到仓库，-m加注释评论
+
+git status
+#查看是否还有文件未提交
+
+
