@@ -98,3 +98,23 @@ git merge --no-ff -m "commit" dev
 #禁用fast-forward模式合并dev分支，-m后加注释
 
 
+----------------------------bug分支-------------------------------------
+场景：在dev分支上干活，工作还未提交。又要回去修复master分支上的bug。可以执行：
+
+git stash
+#将当前工作现场隐藏起来
+
+再切换到master分支，创建bug修复分支issue-404,在其中修复bug，提交，合并到master分支，并删除issue-404分支。
+切换回dev分支继续干活，执行：
+
+git stash list
+#查看以前隐藏起来的场景
+
+git stash apply
+#恢复场景，但stash内容不删除，需要执行
+git stash drop
+#删除stash内容
+
+git stash pop
+#恢复的同时把stash内容也删除了
+
